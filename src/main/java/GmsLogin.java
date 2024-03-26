@@ -52,6 +52,15 @@ public class GmsLogin extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(255, 0, 0));
         jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Hamza Raza\\OneDrive\\Desktop\\FitDataKeeper-main\\Project\\close.png")); // NOI18N
         jLabel1.setText("incorrect username or password");
+        jLabel1.addAncestorListener(new javax.swing.event.AncestorListener() {
+            public void ancestorAdded(javax.swing.event.AncestorEvent evt) {
+                jLabel1AncestorAdded(evt);
+            }
+            public void ancestorMoved(javax.swing.event.AncestorEvent evt) {
+            }
+            public void ancestorRemoved(javax.swing.event.AncestorEvent evt) {
+            }
+        });
 
         jButton2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Hamza Raza\\OneDrive\\Desktop\\FitDataKeeper-main\\Project\\login.png")); // NOI18N
@@ -88,6 +97,11 @@ public class GmsLogin extends javax.swing.JFrame {
             }
             public void focusLost(java.awt.event.FocusEvent evt) {
                 jPasswordField1FocusLost(evt);
+            }
+        });
+        jPasswordField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jPasswordField1ActionPerformed(evt);
             }
         });
 
@@ -222,6 +236,14 @@ public class GmsLogin extends javax.swing.JFrame {
         }
         
     }//GEN-LAST:event_jCheckBox1ActionPerformed
+
+    private void jLabel1AncestorAdded(javax.swing.event.AncestorEvent evt) {//GEN-FIRST:event_jLabel1AncestorAdded
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel1AncestorAdded
+
+    private void jPasswordField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPasswordField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPasswordField1ActionPerformed
 
     /**
      * @param args the command line arguments

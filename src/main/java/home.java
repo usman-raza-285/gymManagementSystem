@@ -1,3 +1,6 @@
+
+import javax.swing.JOptionPane;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -25,21 +28,109 @@ public class home extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        jMenu1 = new javax.swing.JMenu();
+        jMenu2 = new javax.swing.JMenu();
+        jMenu3 = new javax.swing.JMenu();
+        jMenu4 = new javax.swing.JMenu();
+        jMenu5 = new javax.swing.JMenu();
+        jMenu6 = new javax.swing.JMenu();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setLocation(new java.awt.Point(200, 80));
+        setUndecorated(true);
+
+        jPanel1.setBackground(new java.awt.Color(102, 102, 102));
+        jPanel1.setFont(new java.awt.Font("Perpetua", 1, 18)); // NOI18N
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel1.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel1.setFont(new java.awt.Font("Stencil", 1, 48)); // NOI18N
+        jLabel1.setText("Welcome !");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 170, -1, -1));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Hamza Raza\\Downloads\\GymBG.jpg")); // NOI18N
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -70, 1000, 580));
+
+        jMenu1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Hamza Raza\\OneDrive\\Documents\\NetBeansProjects\\gymManagementSystem\\src\\main\\java\\images\\new member.png")); // NOI18N
+        jMenu1.setText("New Member");
+        jMenu1.setFont(new java.awt.Font("Perpetua", 1, 18)); // NOI18N
+        jMenuBar1.add(jMenu1);
+
+        jMenu2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Hamza Raza\\OneDrive\\Documents\\NetBeansProjects\\gymManagementSystem\\src\\main\\java\\images\\update & delete member.png")); // NOI18N
+        jMenu2.setText("Update&delete member");
+        jMenu2.setFont(new java.awt.Font("Perpetua", 1, 18)); // NOI18N
+        jMenuBar1.add(jMenu2);
+
+        jMenu3.setIcon(new javax.swing.ImageIcon("C:\\Users\\Hamza Raza\\OneDrive\\Documents\\NetBeansProjects\\gymManagementSystem\\src\\main\\java\\images\\list of members.png")); // NOI18N
+        jMenu3.setText("List of members");
+        jMenu3.setFont(new java.awt.Font("Perpetua", 1, 18)); // NOI18N
+        jMenuBar1.add(jMenu3);
+
+        jMenu4.setIcon(new javax.swing.ImageIcon("C:\\Users\\Hamza Raza\\OneDrive\\Documents\\NetBeansProjects\\gymManagementSystem\\src\\main\\java\\images\\payment.png")); // NOI18N
+        jMenu4.setText("Payment");
+        jMenu4.setFont(new java.awt.Font("Perpetua", 1, 18)); // NOI18N
+        jMenuBar1.add(jMenu4);
+
+        jMenu5.setIcon(new javax.swing.ImageIcon("C:\\Users\\Hamza Raza\\OneDrive\\Desktop\\FitDataKeeper-main\\Project\\logout.png")); // NOI18N
+        jMenu5.setText("Logout");
+        jMenu5.setFont(new java.awt.Font("Perpetua", 1, 18)); // NOI18N
+        jMenu5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jMenu5MouseClicked(evt);
+            }
+        });
+        jMenuBar1.add(jMenu5);
+
+        jMenu6.setIcon(new javax.swing.ImageIcon("C:\\Users\\Hamza Raza\\OneDrive\\Documents\\NetBeansProjects\\gymManagementSystem\\src\\main\\java\\images\\exit.png")); // NOI18N
+        jMenu6.setText("Exit");
+        jMenu6.setFont(new java.awt.Font("Perpetua", 1, 18)); // NOI18N
+        jMenu6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jMenu6MouseClicked(evt);
+            }
+        });
+        jMenuBar1.add(jMenu6);
+
+        setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jMenu5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu5MouseClicked
+        // TODO add your handling code here:
+        int a= JOptionPane.showConfirmDialog(null,"Do you really want to logout","select",JOptionPane.YES_NO_OPTION);
+        if(a==0)
+        {
+            setVisible(false);
+            new GmsLogin().setVisible(true);
+        }
+    }//GEN-LAST:event_jMenu5MouseClicked
+
+    private void jMenu6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu6MouseClicked
+        // TODO add your handling code here:
+        int a= JOptionPane.showConfirmDialog(null,"Do you really want to Exit","select",JOptionPane.YES_NO_OPTION);
+        if(a==0)
+        {
+        System.exit(0);
+        }
+    }//GEN-LAST:event_jMenu6MouseClicked
 
     /**
      * @param args the command line arguments
@@ -77,5 +168,15 @@ public class home extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenu jMenu3;
+    private javax.swing.JMenu jMenu4;
+    private javax.swing.JMenu jMenu5;
+    private javax.swing.JMenu jMenu6;
+    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
