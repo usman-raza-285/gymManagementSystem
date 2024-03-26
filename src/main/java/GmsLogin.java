@@ -163,7 +163,7 @@ public class GmsLogin extends javax.swing.JFrame {
         });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(71, 52, -1, -1));
 
-        jLabel4.setFont(new java.awt.Font("Parchment", 1, 48)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Algerian", 1, 48)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Login");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 100, 141, -1));
