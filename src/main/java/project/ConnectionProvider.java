@@ -10,13 +10,17 @@ package project;
  */
 import java.sql.*;
 public class ConnectionProvider {
-    public static Connection getCon()
+    public static Connection getCon() throws ClassNotFoundException
     {
         try {
-            Class.forName("com.sqljbdc.driver");
-            Connection con = DriverManager.getConnection("jdbc:microsoft:sqlserver://loaclHOST:3306/GYM management system>]","root",null);
+            String url ="jdbc:mysql://localhost:3306/GMS";
+            String user="usman";
+            String password ="123456";
+            
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            Connection con = DriverManager.getConnection(url,user,password);
             return con;
-        } catch (Exception e) {
+        } catch (SQLException e) {
          return null;
         }
     }
