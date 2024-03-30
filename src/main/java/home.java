@@ -1,4 +1,5 @@
 
+import java.lang.reflect.Member;
 import javax.swing.JOptionPane;
 
 /*
@@ -68,6 +69,11 @@ public class home extends javax.swing.JFrame {
         jMenu2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Hamza Raza\\OneDrive\\Documents\\NetBeansProjects\\gymManagementSystem\\src\\main\\java\\images\\update & delete member.png")); // NOI18N
         jMenu2.setText("Update&delete member");
         jMenu2.setFont(new java.awt.Font("Perpetua", 1, 18)); // NOI18N
+        jMenu2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jMenu2MouseClicked(evt);
+            }
+        });
         jMenuBar1.add(jMenu2);
 
         jMenu3.setIcon(new javax.swing.ImageIcon("C:\\Users\\Hamza Raza\\OneDrive\\Documents\\NetBeansProjects\\gymManagementSystem\\src\\main\\java\\images\\list of members.png")); // NOI18N
@@ -141,6 +147,11 @@ public class home extends javax.swing.JFrame {
         // TODO add your handling code here:
         new NewMember().setVisible(true);
     }//GEN-LAST:event_jMenu1MouseClicked
+
+    private void jMenu2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu2MouseClicked
+        // TODO add your handling code here:
+        new MemberUpdation().setVisible(true);
+    }//GEN-LAST:event_jMenu2MouseClicked
 
     /**
      * @param args the command line arguments

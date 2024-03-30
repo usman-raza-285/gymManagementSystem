@@ -28,6 +28,9 @@
               <Font name="Perpetua" size="18" style="1"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jMenu2MouseClicked"/>
+          </Events>
         </Menu>
         <Menu class="javax.swing.JMenu" name="jMenu3">
           <Properties>
