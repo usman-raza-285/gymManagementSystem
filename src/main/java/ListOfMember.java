@@ -47,7 +47,7 @@ public class ListOfMember extends javax.swing.JFrame {
         jTable1 = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setLocation(new java.awt.Point(200, 80));
+        setLocation(new java.awt.Point(230, 80));
         setUndecorated(true);
 
         jButton1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Hamza Raza\\OneDrive\\Documents\\NetBeansProjects\\gymManagementSystem\\src\\main\\java\\images\\close.png")); // NOI18N
