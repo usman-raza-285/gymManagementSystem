@@ -89,6 +89,11 @@ public class home extends javax.swing.JFrame {
         jMenu4.setIcon(new javax.swing.ImageIcon("C:\\Users\\Hamza Raza\\OneDrive\\Documents\\NetBeansProjects\\gymManagementSystem\\src\\main\\java\\images\\payment.png")); // NOI18N
         jMenu4.setText("Payment");
         jMenu4.setFont(new java.awt.Font("Perpetua", 1, 18)); // NOI18N
+        jMenu4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jMenu4MouseClicked(evt);
+            }
+        });
         jMenuBar1.add(jMenu4);
 
         jMenu5.setIcon(new javax.swing.ImageIcon("C:\\Users\\Hamza Raza\\OneDrive\\Desktop\\FitDataKeeper-main\\Project\\logout.png")); // NOI18N
@@ -162,6 +167,11 @@ public class home extends javax.swing.JFrame {
         // TODO add your handling code here:
         new ListOfMember().setVisible(true);
     }//GEN-LAST:event_jMenu3MouseClicked
+
+    private void jMenu4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu4MouseClicked
+        // TODO add your handling code here:
+        new payment().setVisible(true);
+    }//GEN-LAST:event_jMenu4MouseClicked
 
     /**
      * @param args the command line arguments
