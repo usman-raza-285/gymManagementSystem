@@ -46,7 +46,7 @@ public class GmsLogin extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, null, new java.awt.Color(153, 153, 153), new java.awt.Color(153, 153, 153)));
-        jPanel1.setOpaque(false);
+        jPanel1.setForeground(new java.awt.Color(255, 255, 255));
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 0, 0));
@@ -168,7 +168,7 @@ public class GmsLogin extends javax.swing.JFrame {
         jLabel4.setText("Login");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 100, 141, -1));
 
-        jLabel5.setIcon(new javax.swing.ImageIcon("C:\\Users\\Hamza Raza\\OneDrive\\Desktop\\FitDataKeeper-main\\Project\\_467f5b83-18fc-458e-b5f3-281dfd65ce06.jpeg")); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon("C:\\Users\\Hamza Raza\\Downloads\\GymBG.jpg")); // NOI18N
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 0, 1010, 600));
 
         pack();
